@@ -8,9 +8,8 @@ var Mailhook = require('mqtthook');
 var mailhook = new Mailhook('user', 'password', 'host');
 ```
 
-Trigger a Webhook to do something when receive an email.
+Trigger a Webhook to do something when receive emails from a specific email sender.
 ```js
-mailhook.hook()
-        .if(data => { return data.fromEmail === "white-list-mail@your-host.com"; })
+mailhook.hook("mail@your-host.com")
         .trigger('https://webhook.fake/hooks/3345678');
 ```
