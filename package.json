@@ -1,7 +1,7 @@
 {
   "name": "mailhook",
   "description": "A Node.js library to setup hooks to trigger Webhooks then receive emails.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": {
     "name": "Evan Tseng",
     "email": "evan@tseng.io"
@@ -14,5 +14,8 @@
     "automation",
     "webhook",
     "workflow"
-  ]
+  ],
+  "dependencies": {
+    "mail-listener2": "0.3.1"
+  }
 }
